@@ -177,14 +177,17 @@
                     <button><a href="images/B.CHARITHA.CV.docx" download>Download CV</a></button>
             </div>
             <div class="items12">
-                <form>
-                    <div><input type="text" class="" name="" placeholder="Your Name" required /></div>
-                    <div><input type="email" class="" name="" placeholder="Your Email" required /></div> 
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                  <input type="hidden" name="access_key" value="e8b393da-77d8-40d5-ad32-3691f7ca2eff">
+
+                    <div><input type="text" name="name" placeholder="Your Name" required /></div>
+                    <div><input type="email" name="email" placeholder="Your Email" required /></div> 
                     <div>
-                     <textarea placeholder="Your Message"></textarea>
+                     <textarea name="message" placeholder="Your Message" required ></textarea>
                     </div>
                     <div>
-                     <button type="submit" required>Submit</button>
+                     <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
